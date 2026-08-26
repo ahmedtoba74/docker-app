@@ -1,5 +1,4 @@
-FROM node:18-bookworm-slim
-
+FROM node:22-slim
 WORKDIR /app
 
 COPY package*.json .
@@ -10,4 +9,4 @@ COPY . .
 
 EXPOSE 3000
 
-CMD ["node", "app.js"]
+CMD ["npm", "start"]
