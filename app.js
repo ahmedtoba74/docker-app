@@ -5,7 +5,7 @@ const app = express();
 app.use("/", (req, res, next) => {
     res.json({
         status: "success", 
-        message: "Hello from expres app"
+        message: "Hello from expres app!"
     })
 })
 
